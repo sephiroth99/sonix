@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2014, 2015 sephiroth99
+ * Copyright (c) 2013-2015 sephiroth99
  *
  * Permission to use, copy, modify, and distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -37,7 +37,7 @@ struct ste {
 #pragma pack(pop)
 
 #define BLOCKSIZ 36
-#define VERSION 1
+#define VERSION 2
 
 extern void decode_block(unsigned char *, FILE *);
 extern void wav_skip_header(FILE *);
@@ -51,7 +51,7 @@ void usage(char * name)
 
 	printf("sonix - extract sounds from DRM files\n");
 	printf("Version %d\n", VERSION);
-	printf("Copyright (c) 2014, 2015 sephiroth99\n");
+	printf("Copyright (c) 2013-2015 sephiroth99\n");
 	printf("\n");
 	printf("Usage:\n");
 	printf("  %s%s FILE [FILE ...]\n", basename, ext);
