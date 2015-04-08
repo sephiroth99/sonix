@@ -1,0 +1,13 @@
+sonix - extract sounds from DRM files
+
+Supported games:
+ - Tomb Raider Legend PC
+ - Tomb Raider Anniversary PC
+
+Usage:
+Drag-and-drop any number of DRM files on the executable to extract all the
+sounds present inside. The resulting WAV files will be put in a folder based
+on the name of the original filename.
+
+Copyright (c) 2014, 2015 sephiroth99
+Distributed under the ISC licence.
