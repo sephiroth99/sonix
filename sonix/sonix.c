@@ -155,8 +155,11 @@ void extract_wavs_from_drm(char * name)
 			continue;
 		}
 		
-		char wavname[512] = {0};
-		snprintf(wavname, 511, "%s/%u.wav", destdir, section_table[i].id);
+		char wavname[1024] = {0};
+		if (_snprintf_s(wavname, 1024, _TRUNCATE, "%s/%u.wav", destdir, section_table[i].id) == -1) {
+			fprintf(stderr, "Error printing wav file name.\n");
+			goto bail;
+		}
 		if (fopen_s(&wavfile, wavname, "wb")) {
 			fprintf(stderr, "Error creating wav file %s.\n", wavname);
 			goto bail;
