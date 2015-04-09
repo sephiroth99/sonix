@@ -37,7 +37,7 @@ struct ste {
 #pragma pack(pop)
 
 #define BLOCKSIZ 36
-#define VERSION 2
+#define VERSION 3
 
 extern void decode_block(unsigned char *, FILE *);
 extern void wav_skip_header(FILE *);
